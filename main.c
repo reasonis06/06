@@ -1,19 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void func()
+void func(void)
 {
-  int i;
-  for(i=0; i<10; i++)
-      printf("*");
+  int x;
+  printf("func x is at %p\n", &x);
+
 }
 
-int main(int argc, char *argv[])
+int main(void)
 {
-  int i;
-  
-  func();
-  func();
+  int x;
+  printf("main x is at %p\n", &x);
   func();
   
   system("PAUSE");	
